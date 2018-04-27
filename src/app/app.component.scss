@@ -1,0 +1,10 @@
+.grid-container{
+    border: 1px dashed red;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    ". comp comp comp comp comp ."
+}
+.components{
+    grid-area: comp;
+}
