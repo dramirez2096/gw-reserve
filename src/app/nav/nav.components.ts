@@ -8,17 +8,21 @@ import { INavigationItem } from './../../interfaces/INavigationItem';
         "./nav.component.scss"
     ]
 })
-export class NavComponent implements OnInit {
+export class NavComponent implements OnInit, OnDestroy {
     public menuItems: INavigationItem[];
 
     // life cycle hook
     ngOnInit(): void {
         this.menuItems = [{
-            label: "test",
+            label: "Room 1",
             url: "/"
         },
         {
-            label: "another one",
+            label: "Room 2",
+            url: "/test"
+        },
+        {
+            label: "Room 3",
             url: "/test"
         }];
     }

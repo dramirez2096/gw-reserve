@@ -1,7 +1,14 @@
-<nav>
+<!-- <nav>
     <ul>
         <li>Link 1</li>
         <li>Link 1</li>
         <li>Link 1</li>
+    </ul>
+</nav> -->
+<nav>
+    <ul *ngFor = "let item of menuItems" >
+        <li>
+            {{ item.label }}
+        </li>
     </ul>
 </nav>
