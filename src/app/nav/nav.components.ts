@@ -14,17 +14,22 @@ export class NavComponent implements OnInit, OnDestroy {
     // life cycle hook
     ngOnInit(): void {
         this.menuItems = [{
-            label: "Room 1",
+            label: "DK",
             url: "/"
         },
         {
-            label: "Room 2",
+            label: "Halo",
             url: "/test"
         },
         {
-            label: "Room 3",
+            label: "Zelda",
             url: "/test"
-        }];
+        },
+        {
+            label: "Sim City",
+            url: "/test"
+        }
+        ];
     }
 
     ngOnDestroy(): void {
