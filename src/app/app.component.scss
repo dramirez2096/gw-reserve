@@ -1,7 +1,7 @@
 .grid-container{
-    // width: 100vw;
-    // height: 100vh;
-    border: 1px dashed red;
+    width: 100vw;
+    height: 100vh;
+    // border: 1px dashed red;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas:
@@ -10,18 +10,24 @@
     "main main main main main"
 }
 .login-area{
+    height: 30px;
     grid-area: login;
-    border: 1px dashed blue;
+    // border: 1px dashed blue;
+    background-color: #161716;
     display: flex;
     justify-content: flex-end;
 }
 .nav-area{
-    border: 1px dashed green;
+    height: 55px;
+    // border: 1px dashed green;
+    // background-color: green;
     grid-area: nav;
     display: flex;
     justify-content: flex-end;
 }
 .main-area{
-    border: 1px dashed salmon;
+    min-height: 94%;
+    // border: 1px dashed salmon;
+    // background-color: salmon;
     grid-area: main;
 }
