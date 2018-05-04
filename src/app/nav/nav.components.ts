@@ -15,19 +15,19 @@ export class NavComponent implements OnInit, OnDestroy {
     ngOnInit(): void {
         this.menuItems = [{
             label: "DK",
-            url: "/"
+            url: "donkey_kong"
         },
         {
             label: "Halo",
-            url: "/test"
+            url: "halo"
         },
         {
             label: "Zelda",
-            url: "/test"
+            url: "zelda"
         },
         {
             label: "Sim City",
-            url: "/test"
+            url: "sim_city"
         }
         ];
     }

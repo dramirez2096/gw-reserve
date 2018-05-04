@@ -1,6 +1,12 @@
 .grid-container{
     width: 100vw;
     height: 100vh;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(0, 0, 10, 0.8),
+        rgba(0, 0, 0, 0.8))
+    ,url(../assets/img/bg-6.jpg);
+    background-size: cover;
     // border: 1px dashed red;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
