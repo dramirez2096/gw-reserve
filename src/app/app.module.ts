@@ -1,48 +1,31 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Route } from '@angular/router';
 import { BrowserModule } from '@angular/platform-browser';
+import { AppRoutingModule, routedComponents } from './app.routing.module';
 
 import { AppComponent } from './app.component';
-import { WelcomeComponent } from './welcome/welcome.component';
 import { NavComponent } from './nav/nav.components';
 import { LoginComponent } from './login/login.component';
-import { RoomComponent } from './room/room.component';
 
-const routes: Route[] = [
-    {
-        path: "welcome",
-        component: WelcomeComponent
-    },
-    {
-        path: "room/:id",
-        component: RoomComponent
-    },
-    {
-        path: "",
-        redirectTo: "welcome",
-        pathMatch: "full"
-    },
-    {
-        path: "**",
-        component: WelcomeComponent
-    }
-];
+import { RoomService } from './services/room.service';
 
 @NgModule({
-    declarations: [
-        AppComponent,
-        WelcomeComponent,
-        NavComponent,
-        LoginComponent,
-        RoomComponent //telling angular about the component 
-    ],
     imports: [
         BrowserModule,
-        RouterModule.forRoot(routes)
+        AppRoutingModule
+    ],
+    declarations: [
+        AppComponent ,
+        NavComponent,
+        LoginComponent,
+        routedComponents
+    ],
+    providers:[
+        RoomService
     ],
     bootstrap: [
         AppComponent // choosing the file to boot
     ]
 })
-export class AppModule{
+
+export class AppModule {
 }
