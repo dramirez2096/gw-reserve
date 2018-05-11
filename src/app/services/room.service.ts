@@ -1,12 +1,18 @@
 import { Injectable } from '@angular/core';
+import { Observable } from "rxjs/Observable";
+
+// importing an observable method
+import { of } from "rxjs/observable/of";
+
 import { IRoom } from '../../interfaces/IRoom';
+
 
 @Injectable()
 export class RoomService{
-    public rooms: IRoom[];
+    public rooms: Observable<IRoom[]>;
     
     constructor() {
-        this.rooms = [{
+        this.rooms = of([{
             id : "1",
             title: "starfox",
             picture: "starfox.jpg"
@@ -26,6 +32,6 @@ export class RoomService{
             title: "zelda",
             picture: "zelda.jpg"
         }
-        ]
+        ]);
     }
 }
