@@ -28,20 +28,20 @@ export class NavComponent implements OnInit, OnDestroy {
             title: 'Welcome',
             url: 'welcome'
         }]
-
+        
         this._roomService.rooms.pipe(map( (room:IRoom[]) => {
             const navItems:INavigationItem[] = room.map( (eachRoom:IRoom) => {
                 return{
                     title: eachRoom.title,
                     url: "room/" + eachRoom.id,
-                } // end return  
+                } // end return 
+
             }) // end ARRAY MAP
             return navItems;
         }))
         .subscribe(newNavItems => {
             newNavItems.forEach(roomItem => this.menuItems.push(roomItem));
-        })
-        ;
+        });
         
         
     }

@@ -13,25 +13,33 @@ export class RoomService{
     
     constructor() {
         this.rooms = of([{
-            id : "1",
-            title: "starfox",
+            id : "Starfox",
+            title: "Starfox",
             picture: "starfox.jpg"
         },
         {
-            id : "2",
-            title: "halo",
+            id : "Halo",
+            title: "Halo",
             picture: "halo.jpg"
         },
         {
-            id : "3",
-            title: "sonic",
+            id : "Sonic",
+            title: "Sonic",
             picture: "sonic.jpg"
         },
         {
-            id : "4",
-            title: "zelda",
+            id : "Zelda",
+            title: "Zelda",
             picture: "zelda.jpg"
         }
         ]);
     }
+
+    writeRoomReservation(roomId, reservation) {
+        console.log('Reserve!');
+    }
+    deleteRoomReservation() {
+        console.log('Reserve deleted');
+    }
+
 }

@@ -5,7 +5,8 @@
         to right bottom,
         rgba(0, 0, 10, 0.8),
         rgba(0, 0, 0, 0.8))
-    ,url(../assets/img/bg-6.jpg);
+    ,url(../assets/img/bg-7.jpg);
+    filter: grayscale(60%);
     background-size: cover;
     // border: 1px dashed red;
     display: grid;

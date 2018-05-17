@@ -4,9 +4,15 @@ import { RoomRoutingModule, routedComponents } from './../room/room.routing.modu
 
 import { RoomService } from '../services/room.service';
 
+import { FormsModule } from '@angular/forms';
+
+import { CommonModule } from '@angular/common';
+
 @NgModule({
     imports: [
-        RoomRoutingModule
+        RoomRoutingModule,
+        FormsModule,
+        CommonModule
     ],
     providers: [
         RoomService
